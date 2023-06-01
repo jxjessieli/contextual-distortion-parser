@@ -1,0 +1,2 @@
+(S (VP (VBP Do) (RB n't) (VP (VB be) (NP-PRD (JJ such) (DT a) (NN pessimist)) (NP-VOC (NNP Mr.) (NNP Ambassador)))))
+(NP (NNP Frank) (NNP Tremdine))
