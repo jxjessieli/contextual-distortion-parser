@@ -1,5 +1,7 @@
 # Mask Language Models are Implicit Constituency Parsers
 
+This repository contains code for the paper "Contextual Distortion Reveals Constituency: Masked Language Models are Implicit Parsers" in ACL 2023.
+
 ## Download Dataset
 
 Since the datasets are not publicly available (e.g. [PTB](https://catalog.ldc.upenn.edu/LDC99T42) and [SPMRL](https://dokufarm.phil.hhu.de/spmrl2013/doku.php?id=start) requires license), we cannot include them in the repo. We provide samples of the data format in the data folder. 
@@ -43,4 +45,16 @@ python normalize_scores.py --score_path bert-base-ptb-dev --layer 12
 Run the following scripts to do decoding and evaluation using the normalized score.
 ```
 python parse_eval.py --score_path ./normalized_scores/bert-base-ptb_10 --pred_tree_path pred_tree --treebank_path ../data/ptb/ptb-dev-sample.txt
+```
+
+## Citation
+If you found this work usefule, please cite
+
+```bibtex
+@inproceedings{li2023contextual,
+      title={Contextual Distortion Reveals Constituency: Masked Language Models are Implicit Parsers}, 
+      author={Li, Jiaxi and Lu, Wei},
+      booktitle={Proceedings of ACL},
+      year={2023}
+}
 ```
